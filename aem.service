@@ -1,0 +1,15 @@
+[Unit]
+Description=AEM service
+After=network.target
+SourcePath=/etc/init.d/aem
+
+[Service]
+Type=simple
+Restart=no
+RestartSec=5
+User=root
+ExecStart=/etc/init.d/aem start
+ExecStop=/etc/init.d/aem start
+
+[Install]
+WantedBy=multi-user.target
