@@ -7,7 +7,7 @@ SourcePath=/etc/init.d/aem
 Type=simple
 Restart=no
 RestartSec=5
-User=root
+User=ec2-user
 ExecStart=/etc/init.d/aem start
 ExecStop=/etc/init.d/aem start
 
