@@ -13,17 +13,17 @@ usage ()
         
 start ()
 {       
-        su $AEM_RUN_USER -c $AEM_INSTALL_FOLDER/crx-quickstart/bin/start
+        $AEM_INSTALL_FOLDER/crx-quickstart/bin/start
 }
 
 stop ()
 {       
-        su $AEM_RUN_USER -c $AEM_INSTALL_FOLDER/crx-quickstart/bin/stop
+        $AEM_INSTALL_FOLDER/crx-quickstart/bin/stop
 }
 
 status ()
 {
-        su $AEM_RUN_USER -c $AEM_INSTALL_FOLDER/crx-quickstart/bin/status
+        $AEM_INSTALL_FOLDER/crx-quickstart/bin/status
 }
 
 
